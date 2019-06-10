@@ -1,12 +1,19 @@
 import React from "react";
+import "./ProjectList.css";
 
 const ProjectList = props => {
+  const imgstyle = { width: "50%" };
   return (
-    <ul>
+    <div className="flex-container">
       {props.list.map((item, index) => (
-        <li key={index}>{item}</li>
+        <div key={index} className="card">
+          <img src={item.image} alt="" style={imgstyle} />
+          <div className="container">
+            <h4>{item.title}</h4>
+          </div>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 
