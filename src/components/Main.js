@@ -1,10 +1,10 @@
 import React from "react";
-import CategoryItem from "../services/CategoryItem";
+import { categoryItem, CategoryList } from "../services/CategoryItem";
 
 function Main() {
   return (
     <div className="mainList">
-      <CategoryItem />
+      <CategoryList list={categoryItem["main"]} />
     </div>
   );
 }

@@ -1,16 +1,19 @@
 import React from "react";
-const list = [
-  { title: "Landscapes", image: "category/forest1.jpeg" },
-  { title: "Buildings", image: "category/lake1.jpeg" },
-  { title: "Prtraits", image: "category/cat1.jpeg" },
-  { title: "Collaborations", image: "category/cat1.jpeg" },
-  { title: "Interests", image: "category/forest1.jpeg" },
-  { title: "Exhibitions", image: "category/forest1.jpeg" }
-];
 
-const CategoryItem = () => (
+const categoryItem = {
+  main: [
+    { mapTo: "Landscape", title: "Landscapes", image: "category/forest1.jpeg" },
+    { mapTo: "Buildings", title: "Buildings", image: "category/lake1.jpeg" }
+  ],
+  Landscape: [
+    { title: "forest", image: "category/forest1.jpeg" },
+    { title: "lake", image: "category/lake1.jpeg" }
+  ]
+};
+
+const CategoryList = props => (
   <ul>
-    {list.map(item => (
+    {props.list.map(item => (
       <li key={item.title}>
         <a href="#">
           <img src={item.image} alt="" />
@@ -19,4 +22,4 @@ const CategoryItem = () => (
     ))}
   </ul>
 );
-export default CategoryItem;
+export { categoryItem, CategoryList };
