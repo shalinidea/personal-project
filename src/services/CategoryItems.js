@@ -1,5 +1,6 @@
 import React from "react";
-import { categoryItem, CategoryList } from "./CategoryList";
+import { CategoryList } from "./CategoryList";
+import { categoryItem } from "../data/ImageData";
 
 class CategoryItems extends React.Component {
   constructor(props) {

@@ -1,16 +1,5 @@
 import React from "react";
 
-const categoryItem = {
-  main: [
-    { mapTo: "Landscape", title: "Landscapes", image: "category/forest1.jpeg" },
-    { mapTo: "Buildings", title: "Buildings", image: "category/lake1.jpeg" }
-  ],
-  Landscape: [
-    { title: "forest", image: "category/forest1.jpeg" },
-    { title: "lake", image: "category/lake1.jpeg" }
-  ]
-};
-
 const CategoryList = props => (
   <ul>
     {props.list.map(item => (
@@ -22,4 +11,4 @@ const CategoryList = props => (
     ))}
   </ul>
 );
-export { categoryItem, CategoryList };
+export { CategoryList };
