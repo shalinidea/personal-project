@@ -60,6 +60,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .mainContentItemSubtitleWrapper {
@@ -93,6 +94,7 @@ body {
   color: wheat;
   font: 100 40px/0.8 "Great Vibes", Helvetica, sans-serif;
   text-align: justify;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .imageDarken {
@@ -103,6 +105,11 @@ body {
 .mainContentItemsWrapper:hover .mainContentItemImageWrapper {
   transition: 1s;
   filter: brightness(50%);
+}
+.categoryTitleLink {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
 }
 
 /* Footer styles */
