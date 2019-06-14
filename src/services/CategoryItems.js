@@ -10,10 +10,17 @@ class CategoryItems extends React.Component {
     };
   }
 
+  updateCurrentCategory = nextCategory => {
+    this.setState({ currentCategory: nextCategory });
+  };
+
   render() {
     return (
       <div>
-        <CategoryList list={categoryItem["main"]} />
+        <CategoryList
+          list={categoryItem[this.state.currentCategory]}
+          mapToCategory={this.updateCurrentCategory}
+        />
       </div>
     );
   }

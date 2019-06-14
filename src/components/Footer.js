@@ -1,9 +1,10 @@
 import React from "react";
+import "../App.css";
 
 function Footer() {
   return (
-    <div>
-      <footer>2019 ABC Photographs</footer>
+    <div className="footerContent">
+      <footer>2019 Joplin Photographs</footer>
     </div>
   );
 }

@@ -1,14 +1,20 @@
 import React from "react";
 
 const CategoryList = props => (
-  <ul>
+  <div className="mainContentWrapper">
     {props.list.map(item => (
-      <li key={item.title}>
-        <a href="#">
-          <img src={item.image} alt="" />
-        </a>
-      </li>
+      <div className="mainContentItemsWrapper" key={item}>
+        {/* <div className="mainCategory"onClick={() => {item.mapTo && props.mapToCategory(item.mapTo);}}> */}
+        <div
+          className="mainContentItemImageWrapper"
+          style={{ backgroundImage: `url(${item.image})` }}
+        />
+        <div className="mainContentItemSubtitleWrapper">
+          <div className="mainContentItemSubtitleTextWrapper">{item.title}</div>
+        </div>
+      </div>
+      // </div>
     ))}
-  </ul>
+  </div>
 );
 export { CategoryList };

@@ -3,7 +3,7 @@ import CategoryItems from "../services/CategoryItems";
 
 function Main() {
   return (
-    <div className="mainList">
+    <div>
       <CategoryItems />
     </div>
   );

@@ -1,13 +1,116 @@
+/* Master styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* Navigation styles */
+
+.navigationWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.right-side {
+  display: flex;
+}
+.linkWrapper {
+  margin-right: 20px;
+  font: 100 25px/0.8 "Great Vibes", Helvetica, sans-serif;
+  color: rgb(49, 36, 36);
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  text-decoration: none;
+}
+.linkWrapper:hover {
+  border-bottom: 1px solid black;
+}
+.link {
+  color: #8a8a8a;
+  transition: color 0.5s;
+}
+.link:hover {
+  color: rgb(49, 36, 36);
+}
+.artistname {
+  margin-right: 20px;
+  font: 100 40px/0.8 "Great Vibes", Helvetica, sans-serif;
+  color: rgb(49, 36, 36);
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Main content styles */
+
+.mainContentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mainContentItemsWrapper {
+  position: relative;
+}
+
+.mainContentItemImageWrapper {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainContentItemSubtitleWrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.mainContentItemSubtitlelogoWrpper {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.mainContentItemSubtitleTextWrapper {
+  transition: 1s;
+  color: transparent;
+  font-weight: 600;
+  font: 100 40px/0.8 "Great Vibes", Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.mainContentItemSubtitleWrapper:hover .mainContentItemSubtitleTextWrapper {
+  font-weight: 600;
+  color: wheat;
+  font: 100 40px/0.8 "Great Vibes", Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.imageDarken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.mainContentItemsWrapper:hover .mainContentItemImageWrapper {
+  transition: 1s;
+  filter: brightness(50%);
+}
+
+/* Footer styles */
+
+.footerContent {
+  font: 100 20px/0.8 "Great Vibes", Helvetica, sans-serif;
+  color: rgb(49, 36, 36);
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: left 0;
 }
