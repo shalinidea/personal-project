@@ -1,4 +1,9 @@
 /* Master styles */
+/* .pageTitle {
+  font: 400 10px/1.2 "Merienda One", Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 3px #fff;
+} */
 body {
   margin: 0px;
 }
@@ -60,7 +65,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .mainContentItemSubtitleWrapper {
